@@ -46,6 +46,7 @@ function getOutputForRGBConvertedFromHexCode(object) {
 function convertRGBStringToRGBArray() {
   let RGBvaluesAsString = colorToBeConverted.replace('rgb(', '');
   RGBvaluesAsString = RGBvaluesAsString.replace(')', '');
+  RGBvaluesAsString = RGBvaluesAsString.replace(' ', '');
   RGBArray = RGBvaluesAsString.split(',');
 }
 
